@@ -1,7 +1,7 @@
 btnGlas = document.querySelector('#btnGlas');
 txtUlaz = document.querySelector('#txtUlaz'); 
 
-pocetnaPoruka = 'Hello World. My name is Java Script and enter some text to Web speech'; 
+pocetnaPoruka = 'Hello World. My name is Java Script and enter some text to speech.'; 
 
 window.addEventListener('load', function(){
 
