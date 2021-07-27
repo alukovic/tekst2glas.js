@@ -3,7 +3,7 @@ txtUlaz = document.querySelector('#txtUlaz');
 
 pocetnaPoruka = 'Hello my name is Java Script and enter some text to speech.'; 
 
-window.addEventListener('load', function(){
+window.addEventListener('DOMContentLoaded', () => {
 
     const govor = new SpeechSynthesisUtterance(pocetnaPoruka);
     //govor.lang = 'sr';
@@ -17,7 +17,7 @@ window.addEventListener('load', function(){
 });
 
 
-btnGlas.addEventListener('click', function(){
+btnGlas.addEventListener('click', () => {
 
     const tekst = txtUlaz.value; 
     const govor = new SpeechSynthesisUtterance(tekst);
