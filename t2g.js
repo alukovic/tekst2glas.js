@@ -16,7 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
     
 });
 
-
 btnGlas.addEventListener('click', () => {
 
     const tekst = txtUlaz.value; 
