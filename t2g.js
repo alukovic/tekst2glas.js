@@ -31,7 +31,6 @@ btnGlas.addEventListener('click', () => {
 });
 
 container = document.querySelector('.container');
-//btnGlas.style.margin = '0, auto, 0 auto'; 
 
 btnNoviUnos = document.querySelector('#btnNoviUnos');
 
