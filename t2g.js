@@ -5,7 +5,7 @@ pocetnaPoruka = 'Hello my name is Java Script and enter some text to speech.';
 
 window.addEventListener('load', function(){
 
-    govor = new SpeechSynthesisUtterance(pocetnaPoruka);
+    const govor = new SpeechSynthesisUtterance(pocetnaPoruka);
     //govor.lang = 'sr';
     
     govor.volume = 1;
@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
 btnGlas.addEventListener('click', function(){
 
     const tekst = txtUlaz.value; 
-    govor = new SpeechSynthesisUtterance(tekst);
+    const govor = new SpeechSynthesisUtterance(tekst);
     //govor.lang = 'sr';
 
     govor.volume = 1;
