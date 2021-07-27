@@ -1,17 +1,18 @@
 btnGlas = document.querySelector('#btnGlas');
 txtUlaz = document.querySelector('#txtUlaz'); 
 
-pocetnaPoruka = 'Hello World. My name is Java Script and enter some text to speech.'; 
+pocetnaPoruka = 'Hello my name is Java Script and enter some text to speech.'; 
 
 window.addEventListener('load', function(){
 
-    const Speech = new SpeechSynthesisUtterance(pocetnaPoruka);
+    govor = new SpeechSynthesisUtterance(pocetnaPoruka);
+    //govor.lang = 'sr';
     
-    Speech.volume = 1;
-    Speech.rate = 1;
-    Speech.pitch = 1; 
+    govor.volume = 1;
+    govor.rate = 1;
+    govor.pitch = 1; 
     
-    window.speechSynthesis.speak(Speech);
+    window.speechSynthesis.speak(govor);
     
 });
 
@@ -19,13 +20,14 @@ window.addEventListener('load', function(){
 btnGlas.addEventListener('click', function(){
 
     const tekst = txtUlaz.value; 
-    const Speech = new SpeechSynthesisUtterance(tekst);
+    govor = new SpeechSynthesisUtterance(tekst);
+    //govor.lang = 'sr';
+
+    govor.volume = 1;
+    govor.rate = 1;
+    govor.pitch = 1; 
     
-    Speech.volume = 1;
-    Speech.rate = 1;
-    Speech.pitch = 1; 
-    
-    window.speechSynthesis.speak(Speech);
+    window.speechSynthesis.speak(govor);
 
 });
 
